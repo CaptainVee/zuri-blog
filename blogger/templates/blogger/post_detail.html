@@ -13,5 +13,11 @@
 	{% if user.is_authenticated %}
     <a class="btn info btn-sm mt-1 mb-1" href="{% url 'comment-create' object.id %}">comment</a>
     {% endif %}
-</div>
+	{% if object.author == user %}
+	<div>
+		<a class="btn info btn-sm mt-1 mb-1" href="{% url 'post-update' object.id %}">Update</a>
+		<a class="btn danger btn-sm mt-1 mb-1" href="{% url 'post-delete' object.id %}">Delete</a>	
+	</div>
+	{% endif %}
+	</div>
 {% endblock %}
