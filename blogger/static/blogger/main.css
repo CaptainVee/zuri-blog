@@ -1,5 +1,10 @@
-body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+html {
+  font-family: 'Montserrat';
+  background-color: #E0E0E0;
+  font-size: 12px;
 }
 
 header {
@@ -25,6 +30,13 @@ header h1 a  {
 
 .post-entry {
     margin-bottom: 2rem;
+}
+
+form ul li.category {
+  display: inline-block;
+  background-color: white;
+  padding: 5px 10px;
+  margin-right: 5px;
 }
 
 

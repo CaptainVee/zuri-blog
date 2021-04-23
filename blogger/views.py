@@ -70,8 +70,3 @@ class CommentCreateView(CreateView):
 		if self.request.user == comment.author:
 			return True
 		return False
-
-
-class CommentListView(ListView):
-	model = Comment
-	fields = ['content']
