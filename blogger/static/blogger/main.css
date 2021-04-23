@@ -1,36 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+body{
+  margin: 0;
+}
 
 html {
   font-family: 'Montserrat';
   background-color: #E0E0E0;
-  font-size: 12px;
 }
 
 header {
-    border-bottom: 1px solid;
-    margin-bottom: 2rem;
-    display:  flex;
+  overflow: hidden;
+  background-color: #ffffffc9;
+  padding: 20px 10px;
+  text-align: center;
 
 }
-
+h1,{
+  margin: 0;
+}
+h5{
+  margin-top: 0;
+  font-weight: 100;
+}
+a{
+  text-decoration: none;
+}
 header h1 a  {
-    color: red;
-    text-decoration: none;
+    font-size: 2.5rem;
+    color: #4885b9;
 }
 
-.nav-left {
-    margin-right:  auto;
-}
-
-.nav-right {
-    display:  flex;
-    padding-top: 2rem;   
-}
-
-.post-entry {
-    margin-bottom: 2rem;
-}
 
 form ul li.category {
   display: inline-block;
@@ -40,22 +40,59 @@ form ul li.category {
 }
 
 
-.post-entry h2 {
-    margin: 0.5rem 0;
+.leftcolumn {
+  float: left;
+  width: 75%;
 }
 
-
-.post-entry h2 a,
-.post-entry h2 a:visited {
-    color : blue;
-    text-decoration:  none;
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
 }
 
-.post-entry p {
-    margin: 0;
-    font-weight: 400;
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
 }
 
-.post-entry h2 a:hover {
-    color: red;
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 100px;
 }
+
+.comment {
+  background-color: #e8e6e6;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content-section {
+  background: #f8f8f8;
+  padding: 10px 20px;
+  border: 1px solid #6c6e8487;
+  border-radius: 15px;
+  margin: 10px;
+  width: 50%
+}
+
+input[type=text], select, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
